@@ -1,1 +1,52 @@
 
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(Crow());
+}
+
+class Crow extends StatelessWidget {
+  const Crow({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(appBar: AppBar(
+        title: Text("Hello "),
+      ),
+      body:
+       Center(
+         child: Container(
+           child: Row(
+             mainAxisAlignment: MainAxisAlignment.center,
+             crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(padding: EdgeInsets.all(10.0),
+                   child: ElevatedButton(onPressed: (){
+                   }, 
+                   child:Padding(padding: EdgeInsets.all(90),
+                   child: Text("Dont click here"),
+                   )
+                   ),
+               ),
+               Padding(padding: EdgeInsets.all(10.0),
+                   child: ElevatedButton(onPressed: (){
+                   }, 
+                   child:Padding(padding: EdgeInsets.all(40),
+                   child: Text("Dont click here"),
+                   )
+                   ),
+               ),
+                
+                  ],
+              ),
+         ),
+       ),
+        
+      
+      
+      ),
+    );
+  }
+}
