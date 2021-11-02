@@ -13,7 +13,7 @@ class Crow extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(appBar: AppBar(
-        title: Text("Hello "),
+        title: Text("Hello"),
       ),
       body:
        Container(
